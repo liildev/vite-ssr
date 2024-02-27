@@ -16,6 +16,7 @@ const Home: React.FC<HomeProps> = (_props) => {
 
     useEffect(() => {
         helmet.setTitle(`Home Page - Vite SSR + React`)
+        helmet.setMeta([{ property: "og:title", content: "Home Page - Vite SSR + React" }, { property: "og:description", content: "description" }])
     }, [helmet])
 
     return (

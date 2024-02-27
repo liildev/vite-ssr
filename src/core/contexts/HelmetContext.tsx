@@ -14,13 +14,6 @@ const HelmetProvider = (props: any) => {
     return (
         <helmetContext.Provider value={{ title, setTitle, meta, setMeta, link, setLink, script, setScript, style, setStyle }}>
             <Helmet>
-                <meta property="og:title" content="Home Page - Vite SSR + React" key="ogtitle" />
-                <meta property="og:description" content="description" />
-                <meta property="og:type" content="website" />
-                <meta property="og:site_name" content="Liil Dev" key="ogsitename" />
-                <meta property="og:image:height" content="640" />
-                <meta property="og:image:width" content="360" />
-                <meta property="og:image:type" content="image/jpeg" />
                 <link rel="icon" href="/vite.svg" sizes="any" type="image/svg+xml" />
                 {title && <title>{title}</title>}
                 {meta && meta.map((m: any) => <meta {...m} />)}
